@@ -1,1 +1,115 @@
 readme
+Object-Relational Mapping (ORM) Challenge: E-commerce Back End
+ The challenge is to build the back end for an e-commerce site. You’ll take a working Express.js API and configure it to use Sequelize to interact with a MySQL database.
+ the project demonstrates 
+
+
+ here is a link to the video https://drive.google.com/file/d/1MQ6e5dq2kCj2wCCQDlnqzHBd-NpbUvcp/view
+ https://drive.google.com/file/d/1TqflLIT_jcDlo5RPbK3lqp_fAS881fLB/view
+ 
+ this database contains the following four models, including the requirements listed for each model:
+
+Category
+
+id
+
+Integer
+
+Doesn't allow null values
+
+Set as primary key
+
+Uses auto increment
+
+category_name
+
+String
+
+Doesn't allow null values
+
+Product
+
+id
+
+Integer
+
+Doesn't allow null values
+
+Set as primary key
+
+Uses auto increment
+
+product_name
+
+String
+
+Doesn't allow null values
+
+price
+
+Decimal
+
+Doesn't allow null values
+
+Validates that the value is a decimal
+
+stock
+
+Integer
+
+Doesn't allow null values
+
+Set a default value of 10
+
+Validates that the value is numeric
+
+category_id
+
+Integer
+
+References the category model's id
+
+Tag
+
+id
+
+Integer
+
+Doesn't allow null values
+
+Set as primary key
+
+Uses auto increment
+
+tag_name
+
+String
+
+ProductTag
+
+id
+
+Integer
+
+Doesn't allow null values
+
+Set as primary key
+
+Uses auto increment
+
+product_id
+
+Integer
+
+References the product model's id
+
+tag_id
+
+Integer
+
+References the tag model's id
+
+## Author
+
+- **Vittorio Natoli**
+    - Email: vittorio@emot.com.au
